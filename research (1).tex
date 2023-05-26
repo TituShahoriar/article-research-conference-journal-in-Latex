@@ -1,0 +1,76 @@
+Template 1: Modern and Minimalist Design
+
+
+\documentclass{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Color Scheme
+\definecolor{primarycolor}{RGB}{0, 102, 204}
+\definecolor{secondarycolor}{RGB}{255, 102, 0}
+
+% Section Formatting
+\titleformat{\section}
+{\color{primarycolor}\normalfont\bfseries\Large}
+{\thesection}
+{1em}
+{}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research Title}
+\lfoot{Researcher Name}
+\rfoot{\thepage}
+
+% Hyperlink Formatting
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    filecolor=magenta,
+    urlcolor=primarycolor,
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \includegraphics[width=6cm]{logo.png} % Replace with your own logo
+    \vspace{2cm}
+    {\Huge\bfseries Research Title\par}
+    \vspace{1cm}
+    {\Large Researcher Name\par}
+    \vspace{1cm}
+    {\large Date\par}
+    \vfill
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\lipsum[1-2]
+
+\section{Methodology}
+\lipsum[3-4]
+
+\section{Results}
+\lipsum[5-6]
+
+\section{Conclusion}
+\lipsum[7]
+
+\end{document}

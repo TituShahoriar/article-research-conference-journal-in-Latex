@@ -1,0 +1,67 @@
+Template 2: Clean and Stylish Design
+
+\documentclass{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Color Scheme
+\definecolor{primarycolor}{RGB}{40, 116, 166}
+\definecolor{secondarycolor}{RGB}{166, 40, 116}
+
+% Section Formatting
+\titleformat{\section}
+{\color{primarycolor}\normalfont\bfseries\Large}
+{\thesection}
+{1em}
+{}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Article Title}
+\lfoot{Author Name}
+\rfoot{\thepage}
+
+% Hyperlink Formatting
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    filecolor=magenta,
+    urlcolor=secondarycolor,
+}
+
+\begin{document}
+
+\title{\textbf{\textcolor{primarycolor}{Article Title}}}
+\author{\textcolor{primarycolor}{Author Name}}
+\date{}
+
+\maketitle
+
+\section{Abstract}
+\lipsum[1]
+
+\section{Introduction}
+\lipsum[2-3]
+
+\section{Methodology}
+\lipsum[4-5]
+
+\section{Results}
+\lipsum[6-7]
+
+\section{Conclusion}
+\lipsum[8]
+
+\end{document}
